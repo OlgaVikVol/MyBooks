@@ -1,0 +1,94 @@
+body {
+  font-family: Arial, sans-serif;
+  font-size: 16px;
+  margin: 0;
+  padding: 0;
+}
+
+.container {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  margin: 6px;
+  padding: 6px;
+}
+
+.parent {
+  width: 80%;
+  outline: 5px solid hotpink;
+  padding: 1rem;
+}
+
+.cluster {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+}
+
+.autoGrid {
+  --min-column-size: 10rem;
+  display: grid;
+  gap: 1rem;
+  grid-template-columns: repeat(
+    auto-fit,
+    minmax(min(var(--min-column-size), 100%), 1fr)
+  );
+}
+
+.flexibleGrid {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+}
+
+.flexibleGrid > * {
+  flex: 1;
+}
+
+.reelContainer {
+  width: 96%;
+  outline: 5px solid blue;
+  padding: 1rem;
+}
+
+.reel {
+  --gap: 1rem;
+  display: grid;
+  gap: var(--gap);
+  grid-auto-flow: column;
+  grid-auto-columns: calc(50% - (var(--gap) / 2));
+  overflow-x: scroll;
+  scroll-snap-type: x mandatory;
+  scroll-padding: var(--gap);
+  padding: var(--gap);
+}
+
+.reel > * {
+  scroll-snap-align: start;
+}
+
+.sidebarParent {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: start;
+  gap: 1rem;
+  outline: 5px solid lightgreen;
+  padding: 1rem;
+}
+
+.sidebarParent > :first-child {
+  flex-basis: 500px;
+  flex-grow: 9999;
+}
+
+.sidebarParent > :last-child {
+  flex-basis: 300px;
+  flex-grow: 1;
+}
+
+.chindren {
+  background: darkblue;
+  border: 1px solid black;
+  padding: 1rem;
+  color: white;
+}

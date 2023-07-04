@@ -1,14 +1,23 @@
-
-# **Initializing**
-### `npm init`
-
-# **Start**
 ### `npm start`
 
 ---
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+# **FLEX-WRAP**
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+### The flex-wrap CSS property sets whether flex items are forced onto one line or can wrap onto multiple lines. If wrapping is allowed, it sets the direction that lines are stacked.
+
+# **GRID**
+
+### The grid CSS property is a shorthand property that sets all of the explicit and implicit grid properties in a single declaration.
+
+# **FLEXIBLE-GRID**
+
+### The combination of _flex-wrap_ + _flex_
+
+# **REEL**
+
+### The combination of _display: grid_ + _overflow-x: scroll_
+
+# **SIDEBAR**
+
+### The combination of _flex-basis_ + _flex-grow_
